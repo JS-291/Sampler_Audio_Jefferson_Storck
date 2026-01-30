@@ -38,3 +38,9 @@ Ci-dessous est la liste des fonctionnalités qu'elle implémente :
 ### Run
 - npm i
 - ng serve
+
+## AI
+Les AIs utilisées sont GitHub copilot,comme assistant durant la rédaction du code, ainsi que ChatGPT pour les problèmes plus complexes.
+
+- L'implémentation de l'ajout d'un preset ainsi que sont traitement par le *Backend* a été réalisée avec l'aide de l'AI, notamment dans l'utilisation du package *Multer* et de *formData* pour gérer l'upload des fichiers audio
+- 
