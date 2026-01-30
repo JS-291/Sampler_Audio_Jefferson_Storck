@@ -40,7 +40,10 @@ Ci-dessous est la liste des fonctionnalités qu'elle implémente :
 - ng serve
 
 ## AI
-Les AIs utilisées sont GitHub copilot,comme assistant durant la rédaction du code, ainsi que ChatGPT pour les problèmes plus complexes.
+Les AIs utilisées sont GitHub copilot, comme assistant durant la rédaction du code, ainsi que ChatGPT pour les problèmes plus complexes.
 
 - L'implémentation de l'ajout d'un preset ainsi que sont traitement par le *Backend* a été réalisée avec l'aide de l'AI, notamment dans l'utilisation du package *Multer* et de *formData* pour gérer l'upload des fichiers audio
-- 
+- Un des problèmes rencontré durant l'implémentation du gestionnaire de preset en *Angular* est la synchronisation des requêtes **GET** avec la rendering de la page. Ici, l'utilisation des resolvers a été conseillée par l'AI
+- La fiche *css* du *Frontend* a été rédigéé avec l'aide de GitHub copilot
+
+Le reste des utilisations se résument à des explications ou questions simples(Qu'est ce qu'un mode headless? Comment renomer/supprimer un dossier à javaScript?...), ainsi que des vérification de la logic d'un code écrit à la main.
