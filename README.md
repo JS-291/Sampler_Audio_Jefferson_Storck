@@ -13,7 +13,8 @@ Les fichiers audio sont conservés sur le serveur lui-même.
 Le Frontend est une version amélioré de celui proposé précédemment via le lien suivant : [GitHub](https://github.com/JS-291/TP_Sampler_Jefferson_Storck). Il implémente toutes les fonctionnalités de l'original(waveform, playhead, ...) et ajoute les suivantes:
 
 - Bar de progression qui suit le chargement des presets
-- Possibilité d'ajouter un nouveau preset
+- Possibilité d'ajouter un nouveau preset, il sera sauvegardé sur le Backend
 - Possibilité de trimmer les sons à l'aide d'un slider, on affiche aussi la waveform du nouveau son.
-- Possibilité d'enregistrer un nouveau avec un micro. Ce son est assigné à un nouveau pad sur le preset selectioné, il n'est cependant pas sauvegardé
+- Possibilité d'enregistrer un nouveau son avec un microphone. Ce son est ensuite assigné à un nouveau pad sur le preset selectioné, il n'est cependant pas sauvegardé sur le Backend
+- Les 26 premier pads sont liés à une touche du clavier dans l'ordre suivant [A,Z,E,R,T,Y,U,I,O,P,Q,S,D,F,G,H,J,K,L,M,W,X,C,V,B,N]
 - 
