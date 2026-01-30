@@ -14,7 +14,7 @@ Le *Frontend* est une version amélioré de celui proposé précédemment via le
 
 - Bar de progression qui suit le chargement des presets
 - Possibilité d'ajouter un nouveau preset, il sera sauvegardé sur le *Backend*
-- Possibilité de trimmer les sons à l'aide d'un slider, on affiche aussi la waveform du nouveau son.
+- Possibilité de trimmer les sons à l'aide d'un slider, on affiche aussi la waveform du nouveau son
 - Possibilité d'enregistrer un nouveau son avec un microphone. Ce son est ensuite assigné à un nouveau pad sur le preset selectioné, il n'est cependant pas sauvegardé sur le *Backend*
 - Les 26 premiers pads sont liés dynamiquement à une touche du clavier dans l'ordre suivant : ***A,Z,E,R,T,Y,U,I,O,P,Q,S,D,F,G,H,J,K,L,M,W,X,C,V,B,N***
 - Les touches ***ArrowLeft*** et ***ArrowRight*** permettent de passer au preset précedent/suivant
