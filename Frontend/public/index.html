@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Audio sampler</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" type="module"></script>
+</head>
+
+<body>
+    <div id="main">
+        <h1>Audio sampler</H1>
+        <select class="dropdown" id="presetDropdown">
+        <option value="">Select a preset</option>
+        </select>
+        <progress id="bar" class="progress-bar" max="100" value="0"></progress>
+        <div id="padsContainer"></div>
+        <canvas id="waveformCanvas" width="800" height="200"></canvas>
+        <div id="controlsContainer">
+            <button onclick="window.location.href='/add'" class="pad">Add preset</button>
+            <button id="record" class="pad" style="margin-left: 10px;">Record</button>
+            <button id="stop" disabled="true" class="pad" style="margin-left: 10px;">Stop</button>
+            <input type="range" min="0" max="1" value="0" id="slider-min" step="0.001">
+            <div class="progress">
+                <div class="range"></div>
+            </div>
+            <input type="range" min="0" max="1" value="1" id="slider-max" step="0.001">
+        </div>
+    </div>
+</body>
+
+</html>

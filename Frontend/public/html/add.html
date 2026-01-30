@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Audio sampler</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/add.js" type="module"></script>
+</head>
+<body>
+    <h1>Audio sampler - Add Preset</H1>
+    <form id="addPresetForm">
+        <div style="border: 1px solid #333; padding: 10px; margin-bottom: 10px;">
+            <label for="presetName">Preset Name :</label>
+            <br><br>
+            <input type="text" id="presetName" class="input-text" name="presetName" required>
+            <br><br>
+            <label for="presetType">Preset Type :</label>
+            <br><br>
+            <select id="presetType" class="dropdown" name="presetType" required>
+                <option value="Drumkit">Drum Kit</option>
+                <option value="Piano">Piano</option>
+                <option value="Synth">Synth</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+            <label for="factoryCheck">Factory Preset :</label>
+            <br><br>
+            <input type="checkbox" class="input-check" id="factoryCheck" name="factoryCheck">
+            <br><br>
+            <label for="audioFiles">Audio Samples :</label>
+            <br><br>
+            <input type="file" class="input-file" id="audioFiles" name="audioFiles" accept="audio/*" required multiple>
+        </div>
+        <button class="pad" type="submit">Add Preset</button>
+    </form>
+</body>

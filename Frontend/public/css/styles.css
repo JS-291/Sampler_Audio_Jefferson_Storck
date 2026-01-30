@@ -1,0 +1,159 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #2b2b2b;
+    outline: none;
+    margin: 10px 0;
+}
+
+.headless{
+    display: none;
+}
+
+.progress {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: #2b2b2b;
+  border-radius: 5px;
+}
+
+.range {
+  position: absolute;
+  height: 100%;
+  background: red;
+  border-radius: 5px;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.pad-wrapper {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+
+.pad {
+    padding: 15px 25px;
+    font-size: 14px;
+    background-color: #2b2b2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.pad:hover {
+    background-color: #3c3c3c;
+}
+
+.pad:disabled {
+    background-color: #848181;
+    cursor: not-allowed;
+}
+
+.pad-selected {
+    background-color: red;
+}
+
+.trim-bar {
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    background-color: red;
+    border-radius: 2px;
+}
+
+.dropdown {
+    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #2b2b2b;
+    color: white;
+    width: 20%;
+}
+
+.input-text {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #2b2b2b;
+    color: white;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.input-check {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+.input-file {
+    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #2b2b2b;
+    color: white;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    border: 1px solid #444;
+    background-color: #2b2b2b;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.progress-bar::-webkit-progress-bar {
+    background-color: #2b2b2b;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: red;
+}
+
+.progress-bar::-moz-progress-bar {
+    background-color: red;
+}
+
+
+#waveformCanvas {
+    width: 100%;
+    height: 200px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    margin-top: 10px;
+    display: block;
+}
+
+#controlsContainer {
+    margin-top: 15px;
+}
+
