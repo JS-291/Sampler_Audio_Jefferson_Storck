@@ -1,0 +1,37 @@
+@if(presetTransmis) {
+<div>
+    <mat-card appearance="outlined" class="mycard">
+        <mat-card-header>
+            <mat-card-title>Preset Detail</mat-card-title>
+            <mat-card-content>
+                <p>
+                    Name : {{ presetTransmis.name }}<br>
+                    Type : {{ presetTransmis.type }}<br>
+                    <span [style.color]="presetTransmis.isFactoryPresets? 'green' : 'red'">
+                        isFactoryPresets
+                    </span><br>
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <div id="bottom">
+                    <button matButton="filled" color="warn" [routerLink]="['/presets', presetTransmis.name, 'rename']">
+                        RENAME
+                    </button>
+                    <button matButton="filled" color="warn" (click)="onDeletePreset()">
+                        DELETE
+                    </button>
+                </div>
+            </mat-card-actions>
+        </mat-card-header>
+    </mat-card>
+    <mat-list>
+    @for (sample of presetTransmis.samples; track sample.name) {
+       <mat-list-item>
+            <div matListItemTitle>{{ sample.name }}</div>
+            url : {{sample.url}}
+        </mat-list-item>
+        <mat-divider></mat-divider>
+    }
+    </mat-list>
+</div>
+}

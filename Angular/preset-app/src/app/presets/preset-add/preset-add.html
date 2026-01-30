@@ -1,0 +1,29 @@
+<h1>Add New Preset</h1>
+<form (ngSubmit)="onSubmit(); " #presetForm=ngForm novalidate>
+    <mat-divider></mat-divider>
+    <mat-form-field class="form">
+        <input matInput placeholder="Preset Name" name="name" required [(ngModel)]="namePreset">
+    </mat-form-field>
+    <mat-divider></mat-divider>
+    <mat-form-field class="form">
+        <mat-label>Type :</mat-label>
+        <mat-select required name="type" [(ngModel)]="typePreset">
+            <mat-option [value]="'Drumkit'">Drum kit</mat-option>
+            <mat-option [value]="'Piano'">Piano</mat-option>
+            <mat-option [value]="'Synth'">Synth</mat-option>
+            <mat-option [value]="'Other'">Other</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-divider></mat-divider>
+    <div>
+        <mat-checkbox name="facTest" [(ngModel)]="isFac">
+            Factory Preset
+        </mat-checkbox>
+    </div>
+    <mat-divider></mat-divider>
+    <input type="file" required multiple accept=".wav,.mp3" (change)="onSelected($event);">
+    <mat-divider></mat-divider>
+    <button matButton="filled" color="warn" type="submit" [disabled]="presetForm.invalid || files.length === 0">
+        Add Preset
+    </button>
+</form>

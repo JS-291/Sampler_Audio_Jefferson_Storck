@@ -1,0 +1,23 @@
+
+<div>
+  <a routerLink="/add" class="container">
+    <button mat-flat-button color="accent" class="ajout-btn">
+      Add Preset
+    </button>
+  </a>
+</div>
+
+<mat-list>
+    <mat-divider></mat-divider>
+  @for (preset of presets; track preset.name) {
+
+  <nav>
+    <a routerLink="/presets/{{ preset.name }}">
+      <mat-list-item>
+        <div matListItemTitle>{{ preset.name }}</div>
+      </mat-list-item>
+    </a>
+  </nav>
+  <mat-divider></mat-divider>
+  }
+</mat-list>

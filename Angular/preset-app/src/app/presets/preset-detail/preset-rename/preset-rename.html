@@ -1,0 +1,10 @@
+<h1>Rename Preset</h1>
+<form  (ngSubmit)="onSubmit(); " #presetForm class="nameForm">
+    <mat-form-field class="form">
+        <input matInput placeholder="Preset New Name" name="name" required [(ngModel)]="namePreset">
+    </mat-form-field>
+
+    <button matButton="filled" color="warn" type="submit">
+        RENAME
+    </button>
+</form>
