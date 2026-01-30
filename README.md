@@ -25,3 +25,16 @@ Le *Frontend* est une version amélioré de celui proposé précédemment via le
 - npm run start
 
 ## Angular
+L'application *Angular* fait office de gestionnaire des presets.
+Elle se base sur celle codée en cours pour les assignements.
+Ci-dessous est la liste des fonctionnalités qu'elle implémente :
+
+- Liste les presets conservés sur le serveur *Backend*
+- Possibilité d'afficher les détail de chaque preset
+- Possibilité de renomer un preset
+- Possibilité de supprimer un preset
+- Possibilité d'ajouter un nouveau preset, incluant des nouveaux fichiers audio
+
+### Run
+- npm i
+- ng serve
